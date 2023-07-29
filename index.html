@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS form validation</title>
+  </head>
+  <body>
+    <form action="#" method="get">
+      <h2 class="title">Sign Up</h2>
+
+      <div class="email content">
+        <div class="container">
+          <label for="email">Email</label>
+          <span class="line"></span>
+        </div>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <span class="error"></span>
+
+      <div class="country content">
+        <div class="container">
+          <label for="country">Country</label>
+          <span class="line"></span>
+        </div>
+        <input type="text" id="country" name="country" required />
+      </div>
+      <span class="error"></span>
+
+      <div class="zip content">
+        <div class="container">
+          <label for="zip">Zip Code</label>
+          <span class="line"></span>
+        </div>
+        <input type="text" id="zip" name="zip" minlength="5" required />
+      </div>
+      <span class="error"></span>
+
+      <div class="pwd content">
+        <div class="container">
+          <label for="pwd">Password</label>
+          <span class="line"></span>
+        </div>
+        <input type="password" id="pwd" name="pwd" minlength="8" required />
+      </div>
+      <span class="error"></span>
+
+      <div class="confirm-pwd content">
+        <div class="container">
+          <label for="confirm-pwd">Confirm Password</label>
+          <span class="line"></span>
+        </div>
+        <input type="password" id="confirm-pwd" name="confirm-pwd" required />
+      </div>
+      <span class="error"></span>
+
+      <div class="btn-container">
+        <button type="submit" class="submit">Sign Up</button>
+      </div>
+    </form>
+  </body>
+</html>
